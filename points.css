@@ -1,0 +1,52 @@
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+td, th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+th {
+  background-color: #4CAF50;
+  color: white;
+}
+
+#points-table tbody tr:nth-child(1) {
+  background-color: #ffc107;
+}
+
+#points-table tbody tr:nth-child(2) {
+  background-color: #cddc39;
+}
+
+#points-table tbody tr:nth-child(3) {
+  background-color: #8bc34a;
+}
+
+#points-table tbody tr:not(:nth-child(-n+3)) {
+  background-color: #f5f5f5;
+}
+
+#points-table tbody tr:hover {
+  background-color: #ddd;
+  cursor: pointer;
+}
+
+thead tr {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  thead tr {
+    display: table-row;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  table {
+    overflow-x: auto;
+    display: block;
+  }
+}
